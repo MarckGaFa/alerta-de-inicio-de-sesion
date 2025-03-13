@@ -26,16 +26,28 @@ CHAT_ID = "TU_CHAT_ID_AQUI"  # ID del chat donde se enviará la alerta
 📌 Cómo Ejecutarlo Automáticamente al Iniciar Sesión
 Puedes configurar el script para que se ejecute automáticamente cuando inicies sesión en Windows.
 
-🔹 Opción 1: Usar el Programador de Tareas
+🔹 Usar el Programador de Tareas
+
 Abre el Programador de Tareas (taskschd.msc).
+
 Crea una nueva tarea:
+
 Nombre: Alerta de Inicio de Sesión
+
 Ejecutar con los privilegios más altos: ✅
+
 Disparador (Cuándo se ejecutará):
+
 Evento: "Al iniciar sesión".
+
 Acción (Qué hará):
+
 Iniciar un programa.
+
 Programa: python.exe
+
 Argumentos: "C:\Scripts\alerta_inicio_sesion.py"
+
 Iniciar en: C:\Scripts\
+
 Guarda la tarea y prueba reiniciando tu equipo.
